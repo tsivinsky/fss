@@ -19,3 +19,9 @@ fss $session_name
 ```bash
 fss edit $session_name
 ```
+
+### Delete session
+
+```bash
+fss rm $session_name
+```

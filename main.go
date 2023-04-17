@@ -30,6 +30,13 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+		break
+
+	case "rm":
+		err := cmd.DeleteSession()
+		if err != nil {
+			log.Fatal(err)
+		}
 
 	default:
 		err := cmd.StartSession()
