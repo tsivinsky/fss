@@ -25,6 +25,12 @@ func main() {
 		}
 		break
 
+	case "edit":
+		err := cmd.EditSession()
+		if err != nil {
+			log.Fatal(err)
+		}
+
 	default:
 		err := cmd.StartSession()
 		if err != nil {

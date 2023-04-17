@@ -13,3 +13,9 @@ fss new
 ```bash
 fss $session_name
 ```
+
+### Edit existing session
+
+```bash
+fss edit $session_name
+```
