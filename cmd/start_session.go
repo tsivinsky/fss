@@ -23,7 +23,7 @@ func StartSession() error {
 	cmd := exec.Command(scriptPath)
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
-	err = cmd.Start()
+	err = cmd.Run()
 	if err != nil {
 		return err
 	}
